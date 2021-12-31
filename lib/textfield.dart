@@ -7,17 +7,32 @@ class TxtField extends StatelessWidget{
   Widget build(BuildContext context) {
     
     return SizedBox(
-      child: Column(
-        children: [
-          SizedBox(
-            height: 100,
-          ),
-          TextField(),
-          SizedBox(
-            height: 100,
-          ),
-          TextField(),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(50),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 10,
+            ),
+            TextField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: "Email",
+                border: OutlineInputBorder(),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: "Password",
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
