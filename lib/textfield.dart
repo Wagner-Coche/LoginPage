@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_page/buttonlogin.dart';
 
 class TxtField extends StatelessWidget{
   
@@ -30,6 +31,12 @@ class TxtField extends StatelessWidget{
                 labelText: "Password",
                 border: OutlineInputBorder(),
               ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+              child: ButtonLogin(),
             ),
           ],
         ),
