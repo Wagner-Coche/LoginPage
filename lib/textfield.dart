@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class TextField extends StatelessWidget{
+class TxtField extends StatelessWidget{
   
   @override
   Widget build(BuildContext context) {
