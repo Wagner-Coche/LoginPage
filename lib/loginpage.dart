@@ -26,9 +26,7 @@ class LoginPageState extends State<LoginPage>{
         body: SizedBox(
           child: Column(
             children: [
-              Text(
-                "Teste",
-              )
+              
             ],
           ),
         ),
