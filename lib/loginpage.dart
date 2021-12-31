@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_page/textfield.dart';
 
 class LoginPage extends StatefulWidget{
   
@@ -26,7 +27,7 @@ class LoginPageState extends State<LoginPage>{
         body: SizedBox(
           child: Column(
             children: [
-              
+              TxtField(),
             ],
           ),
         ),
