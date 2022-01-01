@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_page/routes/welcome.dart';
 
 import 'loginpage.dart';
 
@@ -13,9 +14,11 @@ class App extends StatelessWidget{
         theme: ThemeData(
           primarySwatch: Colors.purple,
         ),
-        home: Container(
-          child: LoginPage(),
-        ),
+        initialRoute: "/",
+        routes: {
+          "/" : (context) => LoginPage(),
+          "/welcome" : (context) => Welcome(),
+        },
       ),
     );
   }

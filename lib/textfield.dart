@@ -58,9 +58,7 @@ class TxtField extends StatelessWidget{
               child: ElevatedButton(
                 onPressed: (){
                   if(email == "wagnercoche@gmail.com" && password == "wagner2003"){
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Welcome()),
-                    );
+                    Navigator.of(context).pushReplacementNamed("/welcome");
                   }else if(email == "" && password == ""){
                     print("Informe suas credenciais!");
                   }else{
