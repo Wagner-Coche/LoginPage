@@ -13,13 +13,17 @@ class TxtField extends StatelessWidget{
         child: Column(
           children: [
             SizedBox(
-              height: 10,
+              height: 240,
             ),
             TextField(
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 labelText: "Email",
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20),
+                  )
+                ),
               ),
             ),
             SizedBox(
@@ -29,7 +33,11 @@ class TxtField extends StatelessWidget{
               obscureText: true,
               decoration: InputDecoration(
                 labelText: "Password",
-                border: OutlineInputBorder(),
+                border: OutlineInputBorder(
+                  borderRadius: const BorderRadius.all(
+                    Radius.circular(20),
+                  )
+                ),
               ),
             ),
             SizedBox(
