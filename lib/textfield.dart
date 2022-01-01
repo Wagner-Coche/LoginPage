@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login_page/routes/welcome.dart';
 
 import 'loginpage.dart';
 
@@ -57,7 +58,9 @@ class TxtField extends StatelessWidget{
               child: ElevatedButton(
                 onPressed: (){
                   if(email == "wagnercoche@gmail.com" && password == "wagner2003"){
-                    print("Permissão aceite!");
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Welcome()),
+                    );
                   }else if(email == "" && password == ""){
                     print("Informe suas credenciais!");
                   }else{
