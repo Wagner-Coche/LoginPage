@@ -1,8 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:login_page/buttonlogin.dart';
+
+import 'loginpage.dart';
 
 class TxtField extends StatelessWidget{
+
+  var email = LoginPageState.instance.email;
+  var password = LoginPageState.instance.password;
   
   @override
   Widget build(BuildContext context) {
@@ -16,6 +20,9 @@ class TxtField extends StatelessWidget{
               height: 240,
             ),
             TextField(
+              onChanged: (text){
+                email = LoginPageState.instance.email = text;
+              },
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 labelText: "Email",
@@ -30,6 +37,9 @@ class TxtField extends StatelessWidget{
               height: 20,
             ),
             TextField(
+              onChanged: (text){
+                password = LoginPageState.instance.password = text;
+              },
               obscureText: true,
               decoration: InputDecoration(
                 labelText: "Password",
@@ -44,7 +54,25 @@ class TxtField extends StatelessWidget{
               height: 20,
             ),
             SizedBox(
-              child: ButtonLogin(),
+              child: ElevatedButton(
+                onPressed: (){
+                  if(email == "wagnercoche@gmail.com" && password == "wagner2003"){
+                    print("Permissão aceite!");
+                  }else if(email == "" && password == ""){
+                    print("Informe suas credenciais!");
+                  }else{
+                    print("Acesso negado!");
+                  }
+                },
+                child: SizedBox(
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: Text(
+                      "Login",
+                    ),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

@@ -13,6 +13,11 @@ class LoginPage extends StatefulWidget{
 }
 
 class LoginPageState extends State<LoginPage>{
+
+  static LoginPageState instance = LoginPageState();
+
+  dynamic email = "";
+  dynamic password = "";
   
   @override
   Widget build(BuildContext context) {
