@@ -12,8 +12,11 @@ class ButtonLogin extends StatelessWidget{
 
         },
         child: SizedBox(
-          child: Text(
-            "Login",
+          child: Padding(
+            padding: const EdgeInsets.all(12), 
+            child: Text(
+              "Login",
+            ),
           ),
         ),
       ),
