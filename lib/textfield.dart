@@ -18,7 +18,12 @@ class TxtField extends StatelessWidget{
         child: Column(
           children: [
             SizedBox(
-              height: 240,
+              child: Image.asset(
+                "assets/images/image.jpg",
+              ),
+            ),
+            SizedBox(
+              height: 70,
             ),
             TextField(
               onChanged: (text){
