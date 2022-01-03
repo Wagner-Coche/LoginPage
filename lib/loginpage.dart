@@ -30,11 +30,7 @@ class LoginPageState extends State<LoginPage>{
           ),
         ),
         body: SizedBox(
-          child: Column(
-            children: [
-              TxtField(),
-            ],
-          ),
+          child: TxtField(),
         ),
       ),
     );

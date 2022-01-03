@@ -27,7 +27,7 @@ class TxtField extends StatelessWidget{
             ),
             TextField(
               onChanged: (text){
-                email = LoginPageState.instance.email = text;
+                this.email = LoginPageState.instance.email = text;
               },
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
@@ -44,7 +44,7 @@ class TxtField extends StatelessWidget{
             ),
             TextField(
               onChanged: (text){
-                password = LoginPageState.instance.password = text;
+                this.password = LoginPageState.instance.password = text;
               },
               obscureText: true,
               decoration: InputDecoration(
@@ -59,12 +59,14 @@ class TxtField extends StatelessWidget{
             SizedBox(
               height: 20,
             ),
-            SizedBox(
+            Container(
               child: ElevatedButton(
                 onPressed: (){
-                  if(email == "wagnercoche@gmail.com" && password == "wagner2003"){
-                    Navigator.of(context).pushReplacementNamed("/welcome");
-                  }else if(email == "" && password == ""){
+                  if(this.email == "wagnercoche@gmail.com" && this.password == "wagner2003"){
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => Welcome())
+                    );
+                  }else if(this.email == "" && this.password == ""){
                     print("Informe suas credenciais!");
                   }else{
                     print("Acesso negado!");

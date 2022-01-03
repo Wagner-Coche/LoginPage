@@ -14,11 +14,9 @@ class App extends StatelessWidget{
         theme: ThemeData(
           primarySwatch: Colors.purple,
         ),
-        initialRoute: "/",
-        routes: {
-          "/" : (context) => LoginPage(),
-          "/welcome" : (context) => Welcome(),
-        },
+        home: SizedBox(
+          child: LoginPage(),
+        ),
       ),
     );
   }
