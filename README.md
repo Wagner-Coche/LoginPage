@@ -2,6 +2,6 @@
 
 ## Tela de Login feita com Flutter!
 
-### Para acessa, digite:
+### Para acessar, rode o app e digite:
   Em email - teste@gmail.com
   Em password - teste@gmail.com
