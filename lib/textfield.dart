@@ -19,11 +19,11 @@ class TxtField extends StatelessWidget{
           children: [
             SizedBox(
               child: Image.asset(
-                "assets/images/image.jpg",
+                "assets/images/login.png",
               ),
             ),
             SizedBox(
-              height: 70,
+              height: 5,
             ),
             TextField(
               onChanged: (text){

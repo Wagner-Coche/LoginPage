@@ -11,6 +11,7 @@ class App extends StatelessWidget{
     
     return SizedBox(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.purple,
         ),

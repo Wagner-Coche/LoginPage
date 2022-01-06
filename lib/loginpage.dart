@@ -24,13 +24,17 @@ class LoginPageState extends State<LoginPage>{
     
     return SizedBox(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Login",
+        body: Container(
+          child: Stack(
+            children: [
+              Container(
+                color: Colors.purple.withOpacity(0.35),
+              ),
+              Container(
+                child: TxtField()
+              ),
+            ],
           ),
-        ),
-        body: SizedBox(
-          child: TxtField(),
         ),
       ),
     );
