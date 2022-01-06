@@ -45,10 +45,10 @@ class Welcome extends StatelessWidget{
                         ),
                       ),
                       accountName: Text(
-                        "Wagner Coche",
+                        "Teste",
                       ), 
                       accountEmail: Text(
-                        "wagnercoche@gmail.com",
+                        "teste@gmail.com",
                       ),
                     ),
                   ),
